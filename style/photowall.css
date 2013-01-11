@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face{
+	font-family : "myCustomFont1";
+	src:url(http://localhost:8888/photowall/Candara.ttf);
+}
+@font-face{
+	font-family : "myCustomFont2";
+	src:url(http://localhost:8888/photowall/mysi.ttf);
+}
+body{
+	font-family:"myCustomFont1", Arial;
+	font-size: 12px;
+	margin:0px;
+	padding:0px;
+	background-color:#111;
+	background-size:10px 10px;
+	background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, transparent 26%, transparent 50%, rgba(255, 255, 255, 0.1) 51%, rgba(255, 255, 255, 0.1) 75%,transparent 76%);
+	background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 25%, transparent 26%, transparent 50%, rgba(255, 255, 255, 0.1) 51%, rgba(255, 255, 255, 0.1) 75%,transparent 76%);
+}
+
+header{
+	background:#282828;
+	padding:10px 10px 5px;
+	font-size:1.2em;
+	margin-bottom:20px;
+	box-shadow:0px 5px 20px rgba(0,0,0,0.6);
+}
+
+header .sort_panel, header .filter_panel{
+	float:right;
+	margin:-2px 10px 0px;
+}
+header a.sel {	
+	padding:5px 25px 5px 10px;
+	color:#555;
+	min-width:150px;
+	text-decoration:none;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	background:url(../images/arrow.png) no-repeat right 9px #E3FF3E;	
+	display:block;	
+}
+header a.sel:hover{
+	color:#111;
+	background-position:right -18px;	
+}
+header .filter_panel a.sel{
+	background-color: #fdc93e;	
+}
+header ul{
+	position:absolute;
+	min-width:185px;	
+	list-style:none;
+	line-height:auto;	
+	background:#efff8e;
+	list-style-position:outside;
+	margin:2px 0px 0px;
+	padding:0px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	
+}
+header ul a{
+	border-top:1px solid #bbd233;
+	color:#899a25;
+	padding:5px;
+	text-decoration:none;
+	display:block;	
+}
+header .filter_panel ul{
+	background:#fddf8e;	
+}
+header .filter_panel ul a{
+	border-top:1px solid #e4b538;
+	color:#b18d2b;
+}
+header ul li:first-child a{
+	border:none !important;
+}
+header ul a:hover{
+	color:#000 !important;
+	text-shadow:0px 0px 15px #999;
+}
+
+#employeeDetails{
+	padding:10px;	
+}
+.empData{
+	float:left;
+	margin:5px;	
+}
+
+.empPhoto{
+	width:160px;
+	height:160px;
+	padding:5px;
+	background:#fff;
+	cursor: pointer;
+}
+.empSlideData{
+	background: rgba(0,0,0,0.7);
+	color:#fff;
+	width:170px;
+	height:50px;
+	position:absolute;
+	margin-top:-49px;
+	border-top: 1px solid #000;
+	display:none;
+}
+.empSlideData span{
+	display:block;
+	padding:0px 5px 5px;	
+}
+.empSlideData span:first-child{
+	padding:5px;
+}
+
+#employeePopup{
+	background:rgba(33,33,33,0.7);
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;	
+	display:none;
+	font-size:1.2em;
+}
+#employeePopup .close{
+	width:30px;
+	height:30px;
+	display:block;
+	position:relative;
+	float:right;
+	margin:-15px -15px 0px 0px;	
+	background:url(../images/icon_close.png) no-repeat;
+	font-size:0px;
+}
+#employeePopup .content_panel{
+	border:3px solid #fff;
+	width:500px;
+	height:300px;
+	margin:20px auto;
+	background-image:-webkit-linear-gradient(top, #eee 30%, #bbb);
+	background-image:-moz-linear-gradient(top, #eee 30%, #bbb);
+	background-image:linear-gradient(top, #eee 30%, #bbb);
+}
+.empPopupData{
+	padding:10px;	
+}
+.empPopupData .photo_panel{
+	float: left;
+	width:180px;
+	
+}
+.empPopupData .photo_panel img{
+	width:160px;
+	height:160px;
+	
+}
+.empPopupData .data_panel{
+	float:left;
+	
+	width:295px;
+}
+.empPopupData .data_panel label{
+	padding:5px;
+	display:block;
+}
+.empPopupData .data_panel label.name{
+	font-size:2em;
+	/*font-family:"myCustomFont2";*/
+	padding:0px 5px;
+}
+.empPopupData .data_panel label.role{
+	padding-top:0px;
+	color:#666;
+}
+.empPopupData .data_panel div.contact{
+	padding:5px;
+	border-top:1px dashed #ccc;
+}
+.empPopupData .data_panel div.contact label{
+	background:url(../images/icons.png) no-repeat;
+	padding:3px 5px 10px 23px;	
+}
+.empPopupData .data_panel div.contact label.email{
+	background-position:0px -28px;	
+}
+.empPopupData .data_panel div.contact label.skype{
+	background-position:0px -56px;	
+}
+.hide{
+	display:none;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="style/photowall.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/photowall.js"></script>
+<title>Digital Photo Wall</title>
+</head>
+
+<body>
+	<header>
+    	<img src="images/logo.png" alt="Chennai foto wall" />
+        <div class="sort_panel">
+        	<a href="javascript:void(0)" class="sel">Sorted by Date Joined</a>
+            <ul id="sort_list" class="hide">
+            	<li><a href="javascript:void(0)">Name</a></li>
+                <li><a href="javascript:void(0)">Date Joined</a></li>
+                <li><a href="javascript:void(0)">Role</a></li>
+            </ul>
+        </div>
+        
+        <div class="filter_panel" id="filter_role">
+        	<a href="javascript:void(0)" class="sel">Showing All Roles</a>
+            <ul id="dropdown_role" class="hide">
+            		
+	        </ul>
+        </div>
+        
+        <div class="filter_panel" id="filter_project">
+        	<a href="javascript:void(0)" class="sel">Showing All Projects</a>
+            <ul id="dropdown_project" class="hide">
+            	          
+            </ul>
+        </div>
+    </header>
+    
+	<div id="employeeDetails"></div>
+    <div id="employeePopup">
+    	
+    	<div class="content_panel">
+        <a href="javascript:void(0)" class="close">Close</a>
+        	<div class="content">
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>

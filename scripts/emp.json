@@ -1,0 +1,85 @@
+{
+	"12674" : {
+		"name": "J. Jeyakar Vaiz",
+		"role": "UI Developer",
+		"dob": "20/11/1980",
+		"doj": "02/06/2009",
+		"mobile": "+91 95000 87123",
+		"email": "jeyakj@thoughtworks.com",
+		"personalemail": "j.jeyakarvaiz@gmail.com",
+		"skype": "j.jeyakarvaiz",
+		"yid": "j_jeyakar_vaiz@yahoo.co.in",
+		"currentproject": "RapidFTR"
+	},
+	"13317" : {
+		"name": "Joseph Daniel",
+		"role": "Experience Designer",
+		"dob": "19/10/1979",
+		"doj": "01/07/2010",
+		"mobile": "+91 95000 08579",
+		"email": "josephd@thoughtworks.com",
+		"personalemail": "vmjdaniel@yahoo.com",
+		"skype": "vmjdaniel",
+		"yid": "vmjdaniel@yahoo.com",
+		"currentproject": "Beach"
+	},
+	"12626" : {
+		"name": "Geetha Balasundaram",
+		"role": "App Developer",
+		"dob": "06/12/1987",
+		"doj": "03/06/2009",
+		"mobile": "+91 95000 56878",
+		"email": "geethab@thoughtworks.com",
+		"personalemail": "geetha.balasundaram@gmail.com",
+		"skype": "geetha.balasundaram",		
+		"currentproject": "BlueLabel"
+	},
+	"12445" : {
+		"name": "Navaneethakrishnan Ramachandran",
+		"role": "Quality Analyst",
+		"dob": "24/04/1985",
+		"doj": "06/09/2008",
+		"mobile": "+91 96000 17564",
+		"email": "navneer@thoughtworks.com",
+		"personalemail": "r.navaneeth@gmail.com",
+		"skype": "rnvneeth",
+		"yid": "r.navaneeth@yahoo.com",
+		"currentproject": "Abcam Logistics"
+	},
+	"12390" : {
+		"name": "Boojapathy Chidambaram",
+		"role": "App Developer",
+		"dob": "31/05/1983",
+		"doj": "13/08/2008",
+		"mobile": "+91 97909 28712",
+		"email": "boojapc@thoughtworks.com",
+		"personalemail": "boojapathy@gmail.com",
+		"skype": "boojapathy",
+		"yid": "boojapathy@ymail.com",
+		"currentproject": "BlueLabel"
+	},
+	"13313" : {
+		"name": "Mubashar Nadeem Sibgathullah",
+		"role": "Experience Designer",
+		"dob": "29/10/1982",
+		"doj": "24/06/2010",
+		"mobile": "+91 9790917262",
+		"email": "mubashns@thoughtworks.com",
+		"personalemail": "mubasharnadeem@gmail.com",
+		"skype": "mubasharnadeem",
+		"yid": "nadeem_ece2004@yahoo.co.in",
+		"currentproject": "BlueLabel Exhibition Curator"
+	},
+	"14674" : {
+		"name": "Livi",
+		"role": "UI Developer",
+		"dob": "20/11/1980",
+		"doj": "02/06/2009",
+		"mobile": "+91 95000 87123",
+		"email": "jeyakj@thoughtworks.com",
+		"personalemail": "j.jeyakarvaiz@gmail.com",
+		"skype": "j.jeyakarvaiz",
+		"yid": "j_jeyakar_vaiz@yahoo.co.in",
+		"currentproject": "GAP"
+	}		
+}
