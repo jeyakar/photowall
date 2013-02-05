@@ -1,10 +1,11 @@
 $(function(){
-	var empJSON;
-	var empRoles =  ["All Roles"];
-	var empProjects =  ["All Projects"];
+	//var empJSON;
+	var empRoles =  new Array();
+	var empProjects =  [];
 	var allRoles, allProjects;
+	
 
-	$.getJSON('scripts/emp.json', function(data) {	
+	$.getJSON('scripts/emp1.json', function(data) {	
 		empJSON = data;
 		generateDropdowns();
 		generateData();
@@ -14,11 +15,19 @@ $(function(){
 		
 		$.each(empJSON, function(index, val){
 			empRoles.push(empJSON[index]['role']);
-			empProjects.push(empJSON[index]['currentproject']); 	
+			empProjects.push(empJSON[index]['currentproject']);
+			console.log(empRoles); 
+			console.log(index);	
 		});
+		empRoles.push("All Roles");
 		
-		allRoles = $.unique(empRoles).reverse();
+		roles = empRoles;
+		
+		allRoles = $.unique(empRoles);
 		allProjects = $.unique(empProjects).reverse();
+		
+		
+		allroles = allRoles;
 			
 		$.each(allRoles, function(index, val){
 			$("#dropdown_role").append("<li><a href='javascript:void(0)'>" + allRoles[index] + "</a></li>");	
@@ -46,6 +55,8 @@ $(function(){
 		var sortby = $(".sort_panel a.sel").text().split("Sorted by ")[1];
 		sortby = sortby.toLowerCase();
 		
+		
+		
 		if (filterRole != "All Roles")
 		{
 			valRole = [filterRole];	
@@ -67,16 +78,17 @@ $(function(){
 		if (sortby == "date joined")
 		{
 			var sortbyfield = Object.keys(empJSON).sort(function(a, b){
-				console.log(a);
-				return a > b;	
+				return parseInt(a) > parseInt(b);	
 			});	
 		}
 		else
 		{
+			//empJSON[sortby].sort();
 			var sortbyfield = Object.keys(empJSON).sort(function(a, b){
 				return empJSON[a][sortby] > empJSON[b][sortby];	
 			});	
 		}
+		newsoryby = sortbyfield;
 		
 		$("#employeeDetails").html("");
 		
@@ -86,7 +98,7 @@ $(function(){
 			{
 				var obj = empJSON[val];
 				var empData = "<div class='empData' id='" + val + "'>";
-				var empPhoto = empData + "<div class='empPhoto'><img src='photos/" + val + ".jpg' /></div>"			
+				var empPhoto = empData + "<div class='empPhoto'><img src='photos/" + 1 + ".jpg' /></div>"			
 				var empSlideData = empPhoto + "<div class='empSlideData'>";
 				empSlideData += "<span class='name'>" + obj.name + "</span>";
 				empSlideData += "<span>" + obj.role + "</span>";		

@@ -24,7 +24,13 @@ header{
 	padding:10px 10px 5px;
 	font-size:1.2em;
 	margin-bottom:20px;
-	box-shadow:0px 5px 20px rgba(0,0,0,0.6);
+	-moz-box-shadow:0px 10px 20px rgba(0,0,0,0.7);
+	-webkit-box-shadow:0px 10px 20px rgba(0,0,0,0.7);
+	-o-box-shadow:0px 10px 20px rgba(0,0,0,0.7);
+	box-shadow:0px 10px 20px rgba(0,0,0,0.7);
+	position:fixed;
+	width:99%;
+	z-index:9999;
 }
 
 header .sort_panel, header .filter_panel{
@@ -88,7 +94,7 @@ header ul a:hover{
 }
 
 #employeeDetails{
-	padding:10px;	
+	padding:60px 10px 10px;
 }
 .empData{
 	float:left;
@@ -129,6 +135,7 @@ header ul a:hover{
 	left:0px;	
 	display:none;
 	font-size:1.2em;
+	z-index:99999;
 }
 #employeePopup .close{
 	width:30px;
@@ -142,9 +149,10 @@ header ul a:hover{
 }
 #employeePopup .content_panel{
 	border:3px solid #fff;
-	width:500px;
+	width:540px;
 	height:300px;
 	margin:20px auto;
+	position:absolute;
 	background-image:-webkit-linear-gradient(top, #eee 30%, #bbb);
 	background-image:-moz-linear-gradient(top, #eee 30%, #bbb);
 	background-image:linear-gradient(top, #eee 30%, #bbb);
@@ -155,7 +163,7 @@ header ul a:hover{
 .empPopupData .photo_panel{
 	float: left;
 	width:180px;
-	
+	padding-bottom:10px;
 }
 .empPopupData .photo_panel img{
 	width:160px;
@@ -179,10 +187,18 @@ header ul a:hover{
 .empPopupData .data_panel label.role{
 	padding-top:0px;
 	color:#666;
+	display:inline-block;
+}
+.empPopupData .data_panel label.grade{
+	padding-top:0px;
+	text-align:right;
+	color:#930;
+	display:inline-block;
 }
 .empPopupData .data_panel div.contact{
-	padding:5px;
+	padding:5px 5px 0px;
 	border-top:1px dashed #ccc;
+	border-bottom:1px dashed #ccc;
 }
 .empPopupData .data_panel div.contact label{
 	background:url(../images/icons.png) no-repeat;
@@ -194,6 +210,20 @@ header ul a:hover{
 .empPopupData .data_panel div.contact label.skype{
 	background-position:0px -56px;	
 }
+.empPopupData .data_panel label.exp{
+	color:#666;	
+}
+.empPopupData .data_panel label.exp span{
+	color: #333;	
+}
+.empPopupData label.skills{
+	color: #666;
+	display:block;	
+}
+.empPopupData label.skills_value{
+	color: #333;	
+}
 .hide{
 	display:none;
 }
+.clear{clear:both;}
